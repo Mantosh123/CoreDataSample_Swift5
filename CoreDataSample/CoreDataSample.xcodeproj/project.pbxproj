@@ -14,6 +14,9 @@
 		B4380CDC2CD3E66000F84FF8 /* CoreDataSample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B4380CDA2CD3E66000F84FF8 /* CoreDataSample.xcdatamodeld */; };
 		B4380CDE2CD3E66100F84FF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4380CDD2CD3E66100F84FF8 /* Assets.xcassets */; };
 		B4380CE12CD3E66100F84FF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4380CDF2CD3E66100F84FF8 /* LaunchScreen.storyboard */; };
+		B4AB35382CD51089008C37CD /* Employee+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AB35362CD51089008C37CD /* Employee+CoreDataClass.swift */; };
+		B4AB35392CD51089008C37CD /* Employee+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AB35372CD51089008C37CD /* Employee+CoreDataProperties.swift */; };
+		B4AB353B2CD510DB008C37CD /* PersistentStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AB353A2CD510DB008C37CD /* PersistentStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		B4380CDD2CD3E66100F84FF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4380CE02CD3E66100F84FF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B4380CE22CD3E66100F84FF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4AB35362CD51089008C37CD /* Employee+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Employee+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B4AB35372CD51089008C37CD /* Employee+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Employee+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B4AB353A2CD510DB008C37CD /* PersistentStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 		B4380CD02CD3E66000F84FF8 /* CoreDataSample */ = {
 			isa = PBXGroup;
 			children = (
+				B4AB35352CD51066008C37CD /* CDHelpherClass */,
 				B4380CD12CD3E66000F84FF8 /* AppDelegate.swift */,
 				B4380CD32CD3E66000F84FF8 /* SceneDelegate.swift */,
 				B4380CD52CD3E66000F84FF8 /* ViewController.swift */,
@@ -68,6 +75,16 @@
 				B4380CDA2CD3E66000F84FF8 /* CoreDataSample.xcdatamodeld */,
 			);
 			path = CoreDataSample;
+			sourceTree = "<group>";
+		};
+		B4AB35352CD51066008C37CD /* CDHelpherClass */ = {
+			isa = PBXGroup;
+			children = (
+				B4AB35362CD51089008C37CD /* Employee+CoreDataClass.swift */,
+				B4AB35372CD51089008C37CD /* Employee+CoreDataProperties.swift */,
+				B4AB353A2CD510DB008C37CD /* PersistentStorage.swift */,
+			);
+			path = CDHelpherClass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,9 +159,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4380CDC2CD3E66000F84FF8 /* CoreDataSample.xcdatamodeld in Sources */,
+				B4AB35392CD51089008C37CD /* Employee+CoreDataProperties.swift in Sources */,
 				B4380CD62CD3E66000F84FF8 /* ViewController.swift in Sources */,
 				B4380CD22CD3E66000F84FF8 /* AppDelegate.swift in Sources */,
+				B4AB35382CD51089008C37CD /* Employee+CoreDataClass.swift in Sources */,
 				B4380CD42CD3E66000F84FF8 /* SceneDelegate.swift in Sources */,
+				B4AB353B2CD510DB008C37CD /* PersistentStorage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,6 +395,7 @@
 			currentVersion = B4380CDB2CD3E66000F84FF8 /* CoreDataSample.xcdatamodel */;
 			path = CoreDataSample.xcdatamodeld;
 			sourceTree = "<group>";
+			usesTabs = 0;
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
