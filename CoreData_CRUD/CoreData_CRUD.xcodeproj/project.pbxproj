@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B4385CEB2CDBD9E8001EDF6A /* EmployeeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4385CEA2CDBD9E8001EDF6A /* EmployeeManager.swift */; };
 		B4FE3BF52CD606C500B622B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FE3BF42CD606C500B622B9 /* AppDelegate.swift */; };
 		B4FE3BF72CD606C500B622B9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FE3BF62CD606C500B622B9 /* SceneDelegate.swift */; };
 		B4FE3BF92CD606C500B622B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FE3BF82CD606C500B622B9 /* ViewController.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B4385CEA2CDBD9E8001EDF6A /* EmployeeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeManager.swift; sourceTree = "<group>"; };
 		B4FE3BF12CD606C500B622B9 /* CoreData_CRUD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreData_CRUD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4FE3BF42CD606C500B622B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4FE3BF62CD606C500B622B9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +51,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B4385CE92CDBD967001EDF6A /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				B4385CEA2CDBD9E8001EDF6A /* EmployeeManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 		B4FE3BE82CD606C500B622B9 = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +114,7 @@
 		B4FE3C162CD618B900B622B9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B4385CE92CDBD967001EDF6A /* Manager */,
 				B4FE3C172CD618CF00B622B9 /* Employee.swift */,
 			);
 			path = Model;
@@ -183,6 +194,7 @@
 				B4FE3BF92CD606C500B622B9 /* ViewController.swift in Sources */,
 				B4FE3C182CD618CF00B622B9 /* Employee.swift in Sources */,
 				B4FE3C0D2CD60D0D00B622B9 /* CDEmployee+CoreDataClass.swift in Sources */,
+				B4385CEB2CDBD9E8001EDF6A /* EmployeeManager.swift in Sources */,
 				B4FE3BF52CD606C500B622B9 /* AppDelegate.swift in Sources */,
 				B4FE3C152CD60FBD00B622B9 /* EmployeeDataRepositoty.swift in Sources */,
 				B4FE3BFF2CD606C500B622B9 /* CoreData_CRUD.xcdatamodeld in Sources */,

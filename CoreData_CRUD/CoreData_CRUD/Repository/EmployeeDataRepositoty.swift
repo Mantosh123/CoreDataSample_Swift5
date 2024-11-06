@@ -12,8 +12,8 @@ protocol EmployeeRepositoty {
     func create(employee: Employee)
     func getAll() -> [Employee]?
     func get(byIdentifier id: UUID) -> Employee?
-    func update(employee: Employee)
-    func delete(id: UUID)
+    func update(employee: Employee) -> Bool
+    func delete(employee: Employee) -> Bool
 }
 
 struct EmployeeDataRepositoty: EmployeeRepositoty {
@@ -39,7 +39,35 @@ struct EmployeeDataRepositoty: EmployeeRepositoty {
     }
     
     func get(byIdentifier id: UUID) -> Employee? {
+        let result = getCDEmployee(byIdentifire: id)
+        guard result != nil else { return nil}
+        return result?.convertToEmployee()
+    }
+    
+    func update(employee: Employee) -> Bool {
         //
+        let result = getCDEmployee(byIdentifire: employee.id)
+        guard result != nil else { return false}
+        
+        result?.name = employee.name
+        result?.email = employee.emailId
+        result?.profilePic = employee.profilePic
+        
+        PersistentStorage.shared.saveContext()
+        return true
+    }
+    
+    func delete(employee: Employee) -> Bool {
+        
+        let cdEmployee = getCDEmployee(byIdentifire: employee.id)
+        guard cdEmployee != nil else { return false}
+ 
+        PersistentStorage.shared.context.delete(cdEmployee!)
+        return true
+    }
+    
+    private func getCDEmployee(byIdentifire id : UUID) -> CDEmployee? {
+        
         let fetchRequest = NSFetchRequest<CDEmployee>(entityName: "CDEmployee")
         let predicate = NSPredicate(format: "id==%@", id as CVarArg)
         
@@ -47,22 +75,14 @@ struct EmployeeDataRepositoty: EmployeeRepositoty {
         
         do {
             let result = try PersistentStorage.shared.context.fetch(fetchRequest).first
-
+            
             guard result != nil else { return nil }
-            return result?.convertToEmployee()
+            return result
             
         } catch let error {
             print(error.localizedDescription)
         }
         
         return nil
-    }
-    
-    func update(employee: Employee) {
-        //
-    }
-    
-    func delete(id: UUID) {
-        //
     }
 }
