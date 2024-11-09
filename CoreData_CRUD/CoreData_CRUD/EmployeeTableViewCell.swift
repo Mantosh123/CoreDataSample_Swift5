@@ -20,7 +20,7 @@ class EmployeeTableViewCell: UITableViewCell {
     func updateCell(employee: Employee) {
         nameLabel.text = employee.name
         emailIdLabel.text = employee.emailId
-        profilleImage.image = employee.profilePic.image
+        profilleImage.image = UIImage(data: employee.profilePic!)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

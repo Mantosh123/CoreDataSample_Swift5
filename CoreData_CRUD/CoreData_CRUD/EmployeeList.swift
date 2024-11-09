@@ -21,12 +21,15 @@ class EmployeeList: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         employees = employeeList.fetchEmployee() ?? []
+        print(employees)
+        
+        tableView.reloadData()
     }
     
     @IBAction func createEmployee(_ sender: Any) {
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let ViewCtr = storyboard.instantiateViewController(identifier: "CreateEmployee")
+        let ViewCtr = storyboard.instantiateViewController(identifier: "CreateNewEmployee")
         navigationController?.pushViewController(ViewCtr, animated: true)
     }
 }

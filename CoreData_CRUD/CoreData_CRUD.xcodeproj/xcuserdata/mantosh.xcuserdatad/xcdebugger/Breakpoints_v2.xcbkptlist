@@ -3,4 +3,129 @@
    uuid = "8DB6F5D4-1442-4631-97B7-749AFA3462F1"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "11AC5213-9F76-487F-9831-9A9BC970512E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CoreData_CRUD/CreateEmployee.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "saveButton(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "11AC5213-9F76-487F-9831-9A9BC970512E - 9873a19c3bc12f00"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CoreData_CRUD.CreateEmployee.saveButton(Any) -&gt; ()"
+                  moduleName = "CoreData_CRUD"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mantosh/Desktop/CoreData/CoreData_CRUD/CoreData_CRUD/CreateEmployee.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "11AC5213-9F76-487F-9831-9A9BC970512E - 9873a19c3bc12f3f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CoreData_CRUD.CreateEmployee.saveButton(Any) -&gt; ()"
+                  moduleName = "CoreData_CRUD"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mantosh/Desktop/CoreData/CoreData_CRUD/CoreData_CRUD/CreateEmployee.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
+         <BreakpointContent
+            uuid = "325E92A0-9736-4EF0-8C9D-0E8AA3DDBB14"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            breakpointStackSelectionBehavior = "1"
+            scope = "1"
+            stopOnStyle = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "98CC301E-B9E0-4680-8603-D69E22B0EB85"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CoreData_CRUD/CreateEmployee.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "98CC301E-B9E0-4680-8603-D69E22B0EB85 - 4c36db8e8a1adad5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CoreData_CRUD.CreateEmployee.viewDidLoad() -&gt; ()"
+                  moduleName = "CoreData_CRUD"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mantosh/Desktop/CoreData/CoreData_CRUD/CoreData_CRUD/CreateEmployee.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "98CC301E-B9E0-4680-8603-D69E22B0EB85 - 4c36db8e8a1ada97"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CoreData_CRUD.CreateEmployee.viewDidLoad() -&gt; ()"
+                  moduleName = "CoreData_CRUD"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mantosh/Desktop/CoreData/CoreData_CRUD/CoreData_CRUD/CreateEmployee.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "98CC301E-B9E0-4680-8603-D69E22B0EB85 - 4c36db8e8a1adab0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CoreData_CRUD.CreateEmployee.viewDidLoad() -&gt; ()"
+                  moduleName = "CoreData_CRUD"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mantosh/Desktop/CoreData/CoreData_CRUD/CoreData_CRUD/CreateEmployee.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "76">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
