@@ -18,6 +18,7 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.crop.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="OVW-xM-QCM">
                                 <rect key="frame" x="133.66666666666666" y="123" width="125.99999999999997" height="110.66666666666669"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="126" id="36V-BL-Tk4"/>
                                     <constraint firstAttribute="height" constant="112" id="Cgp-MV-lrT"/>
@@ -31,6 +32,7 @@
                                     <constraint firstAttribute="height" constant="122" id="833-xR-ZJt"/>
                                     <constraint firstAttribute="width" constant="127" id="cyA-PV-2hu"/>
                                 </constraints>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain"/>
                                 <connections>
@@ -103,23 +105,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wRv-rt-78N">
-                                <rect key="frame" x="0.0" y="110" width="393" height="247"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wRv-rt-78N">
+                                <rect key="frame" x="0.0" y="100" width="393" height="247"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="247" id="8Bq-GJ-Ycb"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gGl-hF-v6b">
-                                <rect key="frame" x="299" y="292" width="84" height="41"/>
+                                <rect key="frame" x="299" y="282" width="84" height="41"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="41" id="xAk-jt-DGp"/>
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="pencil" catalog="system" title="  Edit"/>
+                                <connections>
+                                    <action selector="profileImageEditAction:" destination="6yf-Iu-Dgd" eventType="touchUpInside" id="NgU-bO-vtA"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nI6-aQ-dTR">
-                                <rect key="frame" x="16" y="383" width="362" height="34"/>
+                                <rect key="frame" x="16" y="373" width="362" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="eIH-55-uEu"/>
                                 </constraints>
@@ -127,7 +133,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EzM-Rv-EMi">
-                                <rect key="frame" x="15" y="442" width="363" height="34"/>
+                                <rect key="frame" x="15" y="432" width="363" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="cH3-kP-f1t"/>
                                 </constraints>
@@ -135,7 +141,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jk9-wa-ZRI">
-                                <rect key="frame" x="20" y="496" width="353" height="44"/>
+                                <rect key="frame" x="20" y="486" width="353" height="44"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UmO-Mo-Skj">
                                         <rect key="frame" x="0.0" y="0.0" width="176.66666666666666" height="44"/>
@@ -165,7 +171,7 @@
                         <constraints>
                             <constraint firstItem="wRv-rt-78N" firstAttribute="trailing" secondItem="fqf-P8-WuB" secondAttribute="trailing" id="3oo-qZ-ulS"/>
                             <constraint firstItem="wRv-rt-78N" firstAttribute="leading" secondItem="fqf-P8-WuB" secondAttribute="leading" id="6cG-bj-51Y"/>
-                            <constraint firstItem="wRv-rt-78N" firstAttribute="top" secondItem="ct6-BV-tMC" secondAttribute="top" constant="110" id="G6L-PD-ZsV"/>
+                            <constraint firstItem="wRv-rt-78N" firstAttribute="top" secondItem="ct6-BV-tMC" secondAttribute="top" constant="100" id="G6L-PD-ZsV"/>
                             <constraint firstItem="wRv-rt-78N" firstAttribute="centerX" secondItem="ct6-BV-tMC" secondAttribute="centerX" id="Gj8-4P-jhH"/>
                             <constraint firstItem="Jk9-wa-ZRI" firstAttribute="leading" secondItem="fqf-P8-WuB" secondAttribute="leading" constant="20" id="Nq3-8N-JfT"/>
                             <constraint firstItem="nI6-aQ-dTR" firstAttribute="leading" secondItem="fqf-P8-WuB" secondAttribute="leading" constant="16" id="Qlf-YP-vgb"/>
@@ -212,6 +218,7 @@
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.crop.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="fsD-P7-tkS">
                                                     <rect key="frame" x="20" y="17" width="89" height="56.666666666666671"/>
+                                                    <color key="tintColor" systemColor="systemGreenColor"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="89" id="MWH-Rr-N7Q"/>
                                                         <constraint firstAttribute="height" constant="70" id="rqn-aq-Kci"/>
