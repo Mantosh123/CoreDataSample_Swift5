@@ -17,6 +17,7 @@ class EmployeeList: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "Create Employee"
+        setStatusBarBGColor()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -26,10 +27,19 @@ class EmployeeList: UIViewController {
         tableView.reloadData()
     }
     
+    private func setStatusBarBGColor () {
+        let window = UIApplication.shared.windows.filter {$0.isKeyWindow}.first
+        // https://stackoverflow.com/a/57899013/7316675
+        let statusBar = UIView(frame: window?.windowScene?.statusBarManager?.statusBarFrame ?? CGRect.zero)
+        statusBar.backgroundColor = .systemGreen
+        window?.addSubview(statusBar)
+        navigationController?.navigationBar.backgroundColor = .systemGreen
+    }
+    
     @IBAction func createEmployee(_ sender: Any) {
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let ViewCtr = storyboard.instantiateViewController(identifier: "CreateNewEmployee")
+        let ViewCtr = storyboard.instantiateViewController(identifier: "CreateNewEmployee") as! CreateNewEmployee
         navigationController?.pushViewController(ViewCtr, animated: true)
     }
 }
@@ -47,5 +57,11 @@ extension EmployeeList: UITableViewDelegate, UITableViewDataSource {
         return cell;
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let viewCtr = storyboard.instantiateViewController(identifier: "EmployeeDetailViewController") as! EmployeeDetailViewController
+        viewCtr.selectedEmployee = employees[indexPath.row]
+        navigationController?.pushViewController(viewCtr, animated: true)
+    }
 }
     
